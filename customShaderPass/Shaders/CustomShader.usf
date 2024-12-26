@@ -1,0 +1,14 @@
+#pragma once
+ 
+#include "/Engine/Public/Platform.ush"
+
+void MainPS(out float4 Color : SV_Target0)
+{
+    Color = float4(1.0, 0.0, 0.0, 1.0);
+}
+
+void MainVS(in float4 InPosition : ATTRIBUTE0, out float4 OutPosition : SV_POSITION)
+{
+    OutPosition = InPosition;
+
+}
